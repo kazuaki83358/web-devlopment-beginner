@@ -1,0 +1,60 @@
+
+hr{
+    border-style:  none;
+    border-top-style: dotted;
+    border-color: rgb(92, 90, 90);
+    border-width: 5px;
+    width: 10%;
+
+}
+/* writng css for changing background color of website */
+body{
+    background-color: #CADCFC;
+}
+/* writing css for making image rounded  */
+.pink{
+    border-radius: 150px;
+}
+/* writing css for doing first div centered */
+.box{
+    display: flex;
+    align-items: center;
+}
+/* writing css for give margin between texts */
+.info{
+    line-height: 18px;
+    margin: 34px 26px;
+    
+}
+/* writing css for giving color to phone number text using span in h3  */
+.info h3 span{
+    color: blue;
+}
+/* writing css for give margin between texts */
+.obj{
+    margin: 0px;
+    line-height: 18px;
+}
+/* writing css for give margin between texts */
+.obj-para{
+    margin-top: 8px;
+}
+/* phone number in blue color of contact file */
+h3 span{
+    color: blue;
+}
+/* button subit color to black */
+input{
+    color: black;
+}
+
+textarea{
+    color: black;
+}
+
+h1{
+    color: #00246B;
+}
+h3{
+    color: #00246B;
+}
