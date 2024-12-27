@@ -1,0 +1,178 @@
+body {
+    background-color: black;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo img {
+    height: 110px;
+    width: 450px;
+}
+
+.navbar {
+    background-color: purple;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#items {
+    margin: 0;
+    color: white;
+    margin-left: 15%;
+    list-style: none;
+    display: flex;
+}
+
+#items li {
+    padding: 10px 20px;
+    font-family: "Roboto", serif;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#items li:hover {
+    border-bottom: 3px solid black;
+}
+
+.search-container {
+    position: relative;
+    margin-right: 8%;
+    width: 220px;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: white;
+    pointer-events: none;
+}
+
+#search {
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+    padding-right: 30px; 
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    outline: none;
+    padding-right: 0px;
+}
+
+#search::placeholder {
+    color: lightgray;
+}
+
+#down-search{
+    width: 90%;
+    height: 38px;
+    padding: 0 10px;
+    padding-right: 30px; 
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    outline: none;
+    padding-right: 0px;
+}
+
+.down-search-container{
+    margin-left: 15%;
+}
+
+#movies,
+#desi,
+#join,
+#bollywood,
+#kdrama,
+#action,
+#comedy,
+#drama,
+#romance,
+#hindi,
+#hollywood {
+    margin: 0 5px;
+    font-weight: 500;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    box-shadow: 0px 0px 32px -10px #662D8C;
+}
+
+#movies {
+    background-color: #44b81a;
+}
+
+#desi {
+    background-color: red;
+}
+
+#join {
+    background-color: #009de1;
+}
+
+#bollywood {
+    background-color: #662d8c;
+}
+
+.option {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#items2 li {
+    margin: 1px 1px;
+    background-color: #df133c; 
+    font-weight: 500;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    box-shadow: 0px 0px 32px -10px #662D8C;  
+}
+
+#items2 li:hover {
+    border-bottom: 3px solid black;
+}
+
+.search-text {
+    height: 110px;
+    text-align: center;
+    position: relative; 
+    background: url('moviesnation.svg');
+    padding: 20px;  
+}
+
+#search-text {
+    position: relative;
+    top: 12px;
+    color: white;  
+    font-size: 35px; 
+}
+
