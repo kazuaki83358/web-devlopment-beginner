@@ -102,8 +102,9 @@ body{
       justify-content: center;
      }
      .intro img{
-      width: 150px;
+      width: 180px;
       border-radius: 150%;
+      height: 180px;
      }
 
      .intro h2{
@@ -111,6 +112,19 @@ body{
       font-family: "Poppins", serif;
       font-weight: 500;
       font-style: italic;
+     }
+     .intro h3{
+      margin: 5px;
+      font-family: "Ubuntu", serif;
+      font-weight: 450;
+      font-style: normal;
+     }
+     .intro h1{
+      margin: 5px;
+      font-size: 35px;
+      font-family: "Ubuntu", serif;
+      font-weight: 350;
+      font-style: normal;
      }
 
      .intro p{
