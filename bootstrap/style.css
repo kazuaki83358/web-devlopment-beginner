@@ -1,0 +1,54 @@
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.width-50{
+    width: 50px;
+}
+.content h3 {
+    text-align: center;
+    padding: 15px;
+}
+
+.about1 img{
+    width: 40vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.about2 img {
+    width: 40vw;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.about3 img {
+    width: 40vw;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.about1 p {
+    width: 40vw;
+    padding-left: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about2 p {
+    width: 40vw;
+    padding-right: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about3 p {
+    width: 40vw;
+    padding-left: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.about-me h1{
+    text-align: center;
+    padding: 15px;
+}
