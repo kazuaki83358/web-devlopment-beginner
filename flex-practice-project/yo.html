@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Song Info</title>
+  <style>
+    body {
+      background-color: #f4f4f9; /* Light background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .song-container {
+      text-align: center;
+      padding: 40px;
+      background-color: #ececec; /* Changed background color */
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More visible shadow */
+      width: 400px;
+    }
+
+    .song-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .song-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .song-artist {
+      font-size: 24px;
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="song-container">
+    <img id="song-image" class="song-image" src="" alt="Song Image">
+    <div id="song-title" class="song-title"></div>
+    <div id="song-artist" class="song-artist"></div>
+    <button class="button" onclick="fetchRandomSong()">Get Random Song</button>
+  </div>
+
+  <script>
+    // Function to fetch random song data
+    function fetchRandomSong() {
+      // URL to fetch the JSON data from
+      const url = 'http://192.168.1.38:8080/songs'; // Make sure this URL is correct
+
+      // Fetching the JSON data
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          // Make sure to check if data is an array and pick a random song
+          const randomSong = data[Math.floor(Math.random() * data.length)];
+
+          // Check if the song data has the necessary fields
+          if (randomSong) {
+            const { title, artist, image } = randomSong;
+
+            // Update the DOM with the song details
+            document.getElementById('song-title').textContent = title;
+            document.getElementById('song-artist').textContent = artist;
+            document.getElementById('song-image').src = image;
+
+            // Optional: Check if the image URL is not empty or broken
+            if (!image || image === '') {
+              document.getElementById('song-image').alt = 'No image available';
+            }
+          } else {
+            console.error('No valid song data found.');
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching the data:', error);
+        });
+    }
+  </script>
+
+</body>
+</html>
