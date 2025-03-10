@@ -52,3 +52,12 @@ p {
     text-align: center;
     padding: 15px;
 }
+.about1, .about2, .about3 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-me {
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
