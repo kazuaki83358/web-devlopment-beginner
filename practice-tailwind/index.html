@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="global.css">
 </head>
 <body class="bg-black text-white">
     <!-- Navbar -->
-    <nav class="bg-[#1B1B1B] p-4 shadow-lg mx-0 md:mx-12" x-data="{ open: false }">
+    <nav class="bg-[#1B1B1B] p-4 shadow-lg mx-0 md:mx-12 rounded-lg" x-data="{ open: false } ">
         <!-- Mobile menu button -->
         <div class="flex justify-between items-center">
             <button 
@@ -29,7 +30,6 @@
         >
             <div class="flex flex-col items-center space-y-6 mt-4 pb-4">
                 <a href="#" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800">Home</a>
-                <a href="#" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800">Case Studies</a>
                 <a href="#" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800">Recent Work</a>
                 <a href="contact.html" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800">Get in Touch</a>
                 
@@ -46,15 +46,14 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex justify-center space-x-20 items-center">
-            <a href="#" class="text-gray-300 hover:text-white">Home</a>
-            <a href="#" class="text-gray-300 hover:text-white">Case Studies</a>
-            <a href="#" class="text-gray-300 hover:text-white">Recent Work</a>
-            <a href="contact.html" class="text-gray-300 hover:text-white">Get in Touch</a>
+            <a href="#" class="text-gray-300 hover:text-white serif">Home</a>
+            <a href="#" class="text-gray-300 hover:text-white serif">Recent Work</a>
+            <a href="contact.html" class="text-gray-300 hover:text-white serif">Get in Touch</a>
             
-            <a href="https://www.linkedin.com/in/nishant-kumar-958b36281" target="_blank" class="text-gray-300 hover:text-white flex items-center">
+            <a href="https://www.linkedin.com/in/nishant-kumar-958b36281" target="_blank" class="text-gray-300 hover:text-white flex items-center serif">
                 <i class="fab fa-linkedin text-xl mr-2"></i>LinkedIn
             </a>
-            <a href="https://github.com/kazuaki83358" target="_blank" class="text-gray-300 hover:text-white flex items-center">
+            <a href="https://github.com/kazuaki83358" target="_blank" class="text-gray-300 hover:text-white flex items-center serif">
                 <i class="fab fa-github text-xl mr-2"></i>GitHub
             </a>
         </div>
@@ -62,14 +61,38 @@
    <!-- Main Section -->
 <section class="flex flex-col md:flex-row items-center justify-between text-center md:text-left min-h-[80vh] p-4 md:p-6 container mx-auto">
     <div class="md:w-1/2 space-y-4">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Nishant Kumar</h1>
-        <p class="text-gray-400 text-lg md:text-xl">Android Developer | Web Developer</p>
-        <p class="text-gray-400 text-md md:text-lg">I am passionate about building intuitive mobile apps and websites. I specialize in Android development using Kotlin and Jetpack Compose and have experience with web development technologies like HTML, CSS, and React. I enjoy solving complex problems and learning new skills to stay ahead in the ever-evolving tech landscape.</p>
-        <button class="mt-6 bg-[#3F8E00] px-4 md:px-6 py-2 md:py-3 rounded-lg text-white font-semibold hover:bg-[#357A00] transition-colors shadow-[0_0_15px_rgba(63,142,0,0.5)] hover:shadow-[0_0_20px_rgba(63,142,0,0.7)]">Let's get started</button>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold" style="font-family: 'Dancing Script', cursive;">Nishant Kumar</h1>
+        <p class="text-gray-300 text-lg md:text-xl">Android Developer | Web Developer</p>
+        <p class="text-gray-400 text-md md:text-lg try">I am passionate about building intuitive mobile apps and websites. I specialize in Android development using Kotlin and Jetpack Compose and have experience with web development technologies like HTML, CSS, and React. I enjoy solving complex problems and learning new skills to stay ahead in the ever-evolving tech landscape.</p>
+        <button class="mt-6 bg-[#3F8E00] px-4 md:px-6 py-2 md:py-3 rounded-lg text-white font-semibold hover:bg-[#357A00] transition-colors shadow-[0_0_15px_rgba(63,142,0,0.5)] hover:shadow-[0_0_20px_rgba(63,142,0,0.7)] try">Let's get started</button>
     </div>
     <div class="md:w-1/2 flex justify-center md:justify-end mt-2 md:mt-0">
         <img src="src/nr1.jpeg" alt="Nishant" class="rounded-full w-48 h-48 md:w-64 md:h-64">
     </div>
 </section>
+<div class="flex justify-center space-x-12 mt-8 ">
+    <a href="https://kotlinlang.org/" target="_blank" class="text-gray-300 hover:text-white" title="Kotlin">
+        <img src="src/kotlin.png" alt="Kotlin" class="w-10 h-10">
+    </a>
+    <a href="https://developer.android.com/studio" target="_blank" class="text-gray-300 hover:text-white" title="Android Studio">
+        <img src="src/studio.png" alt="Android Studio" class="w-10 h-10">
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="text-gray-300 hover:text-white" title="HTML">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="w-10 h-10">
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="text-gray-300 hover:text-white" title="CSS">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="w-10 h-10">
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="text-gray-300 hover:text-white" title="JavaScript">
+        <img src="src/script.png" alt="JavaScript" class="w-10 h-10">
+    </a>
+    <a href="https://git-scm.com/" target="_blank" class="text-gray-300 hover:text-white" title="Git">
+        <img src="src/git.png" alt="Git" class="w-10 h-10">
+    </a>
+    <a href="https://github.com/" target="_blank" class="text-gray-300 hover:text-white" title="GitHub">
+        <img src="src/hub.png" alt="GitHub" class="w-10 h-10">
+    </a>
+</div>
+
 </body>
 </html>
