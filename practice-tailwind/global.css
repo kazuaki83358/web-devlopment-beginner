@@ -21,4 +21,11 @@ h1 {
 .text-shadow {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+.glow-effect {
+    transition: text-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+    text-shadow: 0 0 10px rgba(63, 142, 0, 0.7), 0 0 20px rgba(63, 142, 0, 0.5);
+}
 

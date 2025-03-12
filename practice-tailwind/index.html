@@ -30,9 +30,9 @@
         >
             <div class="flex flex-col items-center space-y-6 mt-4 pb-4">
                 <a href="#" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800 text-shadow">Home</a>
-                <a href="#" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800">Recent Work</a>
+                <a href="#projects" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800 glow-effect">Recent Work</a>
                 <a href="contact.html" class="text-gray-300 hover:text-white w-full text-center py-2 hover:bg-gray-800">Get in Touch</a>
-                
+            
                 <div class="flex justify-center space-x-6 pt-4 border-t border-gray-700 w-full px-4">
                     <a href="https://www.linkedin.com/in/nishant-kumar-958b36281" target="_blank" class="text-gray-300 hover:text-white">
                         <i class="fab fa-linkedin text-2xl"></i>
@@ -45,8 +45,8 @@
         </div>
         <!-- Desktop Menu -->
         <div class="hidden md:flex justify-center space-x-20 items-center">
-            <a href="#" class="text-gray-300 hover:text-white serif text-shadow">Home</a>
-            <a href="#" class="text-gray-300 hover:text-white serif">Recent Work</a>
+            <a href="#" class="text-gray-300 hover:text-white serif text-shadow glow-effect">Home</a>
+            <a href="#projects" class="text-gray-300 hover:text-white serif glow-effect">Recent Work</a>
             <a href="contact.html" class="text-gray-300 hover:text-white serif">Get in Touch</a>
             
             <a href="https://www.linkedin.com/in/nishant-kumar-958b36281" target="_blank" class="text-gray-300 hover:text-white flex items-center serif">
@@ -60,7 +60,7 @@
    <!-- Main Section -->
 <section class="flex flex-col md:flex-row items-center justify-between text-center md:text-left min-h-[80vh] p-4 md:p-6 container mx-auto">
     <div class="md:w-1/2 space-y-4">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold" style="font-family: 'Dancing Script', cursive;">Nishant Kumar</h1>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">Nishant Kumar</h1>
         <p class="text-gray-300 text-lg md:text-xl try">Android Developer | Web Developer</p>
         <p class="text-gray-400 text-md md:text-lg try">I am passionate about building intuitive mobile apps and websites. I specialize in Android development using Kotlin and Jetpack Compose and have experience with web development technologies like HTML, CSS, and React. I enjoy solving complex problems and learning new skills to stay ahead in the ever-evolving tech landscape.</p>
         <button class="mt-4 bg-[#3F8E00] px-4 md:px-6 py-2 md:py-3 rounded-lg text-white font-semibold hover:bg-[#357A00] transition-colors shadow-[0_0_15px_rgba(63,142,0,0.5)] hover:shadow-[0_0_20px_rgba(63,142,0,0.7)] try">Let's get started</button>
@@ -73,9 +73,9 @@
     </div>
 </section>
 <!-- This is a div element that contains work experience -->
-<div class="mt-1 -mx-16 md:mx-16"> <!-- Decreased top margin from mt-2 to mt-1 -->
-    <h2 class="text-2xl font-bold text-gray-300 mb-2 try">About Me</h2> <!-- Decreased bottom margin from mb-4 to mb-2 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="mt-1 mx-4 md:mx-16"> <!-- Adjusted margins for better mobile responsiveness -->
+    <h2 class="text-2xl font-bold text-gray-300 mb-2 try">About Me</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-2"> <!-- Added padding for better spacing on mobile -->
         <div class="flex flex-col items-center bg-white bg-opacity-20 p-4 rounded-lg backdrop-blur-md">
             <img src="src/kotlin.png" alt="Kotlin" class="w-24 h-24 mb-2">
             <h3 class="text-lg font-semibold text-white">Kotlin</h3>
@@ -99,7 +99,7 @@
     </div>
 </div>
 <!-- This is a div element that contains project made by me  -->
-<div class="min-h-screen bg-gradient-to-br flex flex-col justify-center items-center px-8 py-12">
+<div id="projects" class="min-h-screen bg-gradient-to-br flex flex-col justify-center items-center px-8 py-12">
     <h2 class="text-3xl font-bold text-white mb-8 try">Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl w-full">
         <!-- Project 1 -->
